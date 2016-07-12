@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dropseed.minions.Api", "Dropseed.minions.Api\Dropseed.minions.Api.csproj", "{27DB019B-AC82-4EFD-8758-7A92F8C70186}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dropseed.minions", "Dropseed.minions\Dropseed.minions.csproj", "{882EE6CE-2B2C-4105-8EC9-0818ED66C023}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27DB019B-AC82-4EFD-8758-7A92F8C70186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27DB019B-AC82-4EFD-8758-7A92F8C70186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27DB019B-AC82-4EFD-8758-7A92F8C70186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27DB019B-AC82-4EFD-8758-7A92F8C70186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{882EE6CE-2B2C-4105-8EC9-0818ED66C023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882EE6CE-2B2C-4105-8EC9-0818ED66C023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882EE6CE-2B2C-4105-8EC9-0818ED66C023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{882EE6CE-2B2C-4105-8EC9-0818ED66C023}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
