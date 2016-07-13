@@ -11,6 +11,7 @@ namespace Dropseed.minions
     {
         static void Main(string[] args)
         {
+
             HostFactory.Run(x =>
             {
                 x.Service<Service>(p =>
