@@ -1,0 +1,24 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <BuildDir>$(MsBuildProjectDirectory)\Build\</BuildDir>
+    <Release>$(MsBuildProjectDirectory)\Release\</Release>
+  </PropertyGroup>
+  <ItemGroup>
+    <ReleaseFiles Include="$(BuildDir)\*.*"></ReleaseFiles>
+  </ItemGroup>
+  <Target Name="Clean">
+    <RemoveDir Condition="Exists($(BuildDir))" Directories="$(BuildDir)"></RemoveDir>
+    <MakeDir Directories="$(BuildDir)"></MakeDir>
+  </Target>
+
+  <Target Name="Build" DependsOnTargets="Clean">
+    <MSBuild BuildInParallel="true" Properties="OutDir=$(BuildDir)" Projects="$(MsBuildProjectDirectory)\Dropseed.minions\Dropseed.minions.csproj"></MSBuild>
+  </Target>
+
+  <Target Name="Release" DependsOnTargets="Build">
+    <RemoveDir Condition="Exists($(Release))" Directories="$(Release)"></RemoveDir>
+    <MakeDir Directories="$(Release)"></MakeDir>
+    <Copy SourceFiles="@(ReleaseFiles)" DestinationFolder="$(Release)"></Copy>
+  </Target>
+
+</Project>

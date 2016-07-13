@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dropseed.minions", "Dropsee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dropseed.minions.Test", "Dropseed.minions.Test\Dropseed.minions.Test.csproj", "{98906C16-05A5-4643-B40E-494F4633213C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildConfiguration", "BuildConfiguration", "{893DD4ED-D24E-4932-827B-527C767541A4}"
+	ProjectSection(SolutionItems) = preProject
+		Dropseed.minions.msbuild = Dropseed.minions.msbuild
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
