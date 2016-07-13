@@ -90,6 +90,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="settings.json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dropseed.minions.Api\Dropseed.minions.Api.csproj">
