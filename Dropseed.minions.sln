@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dropseed.minions.Api", "Dro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dropseed.minions", "Dropseed.minions\Dropseed.minions.csproj", "{882EE6CE-2B2C-4105-8EC9-0818ED66C023}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dropseed.minions.Test", "Dropseed.minions.Test\Dropseed.minions.Test.csproj", "{98906C16-05A5-4643-B40E-494F4633213C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{882EE6CE-2B2C-4105-8EC9-0818ED66C023}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{882EE6CE-2B2C-4105-8EC9-0818ED66C023}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{882EE6CE-2B2C-4105-8EC9-0818ED66C023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98906C16-05A5-4643-B40E-494F4633213C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98906C16-05A5-4643-B40E-494F4633213C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98906C16-05A5-4643-B40E-494F4633213C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98906C16-05A5-4643-B40E-494F4633213C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
