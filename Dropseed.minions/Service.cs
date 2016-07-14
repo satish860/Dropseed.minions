@@ -13,22 +13,15 @@ namespace Dropseed.minions
     {
         IDisposable webServer;
         string baseAddress;
-        private readonly MinionSettings settings;
+        
 
-        public Service()
+        public Service(string url)
         {
-            settings = new MinionSettings();
-            fetchSettings();
+            baseAddress = url;
            
         }
 
-        private void fetchSettings()
-        {
-            string jsondata = File.ReadAllText("settings.json");
-            dynamic settingjson=Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(jsondata);
-            baseAddress=settings.GetUrl(settingjson.Port.Value);
-        }
-
+      
         public void Start()
         {
             this.webServer = WebApp.Start<StartUp>(url: baseAddress);
