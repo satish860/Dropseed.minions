@@ -12,7 +12,7 @@ namespace Dropseed.minions
     public class Service
     {
         IDisposable webServer;
-        string baseAddress;
+        string baseAddress="http://localhost:9000";
         private readonly MinionSettings settings;
 
         public Service()
@@ -24,9 +24,7 @@ namespace Dropseed.minions
 
         private void fetchSettings()
         {
-            string jsondata = File.ReadAllText("settings.json");
-            dynamic settingjson=Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(jsondata);
-            baseAddress=settings.GetUrl(settingjson.Port.Value);
+           
         }
 
         public void Start()
