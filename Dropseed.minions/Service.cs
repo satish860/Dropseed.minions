@@ -12,16 +12,21 @@ namespace Dropseed.minions
     public class Service
     {
         IDisposable webServer;
-        string baseAddress;
-        
+        string baseAddress="http://localhost:9000";
+        private readonly MinionSettings settings;
 
-        public Service(string url)
+        public Service()
         {
-            baseAddress = url;
+            settings = new MinionSettings();
+            fetchSettings();
            
         }
 
-      
+        private void fetchSettings()
+        {
+           
+        }
+
         public void Start()
         {
             this.webServer = WebApp.Start<StartUp>(url: baseAddress);
