@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Should;
 
 namespace Dropseed.minions.Test.Query
 {
@@ -12,7 +13,8 @@ namespace Dropseed.minions.Test.Query
         public void ShouldBeAbleToGetAllTheAppPoolRegistered()
         {
             GetAppPools appPool = new GetAppPools();
-            appPool.Get();
+            var appPoolname=appPool.Get();
+            appPoolname.ShouldNotBeEmpty();
         }
     }
 }
